@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiverse Scanner</title>
+
+  <!-- Mobile Critical -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Multiverse Background -->
+  <canvas id="stars"></canvas>
+
+  <!-- Main Wrapper -->
+  <main class="wrapper">
+    <section class="terminal-box">
+
+      <h1 class="headline">
+        Search For Alternate Timeline Without You
+      </h1>
+
+      <div id="output" class="output"></div>
+
+      <div class="button-group">
+        <button id="searchBtn" class="primary-btn">
+          Search
+        </button>
+
+        <button id="proceedBtn" class="secondary-btn hidden">
+          Proceed
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- AUDIO FILES (Paths must match your folder) -->
+  <audio id="ambientSound" src="audio/ambient.mp3" loop></audio>
+  <audio id="typeSound" src="audio/type.mp3"></audio>
+  <audio id="errorSound" src="audio/error.mp3"></audio>
+  <audio id="successSound" src="audio/success.mp3"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
